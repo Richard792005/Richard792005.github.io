@@ -1,0 +1,758 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+
+
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Poppins', sans-serif;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+
+}
+
+h1,
+sec1 {
+    color: white;
+    text-shadow: 1px 8px 5px rgba(0, 0, 0, 0.6);
+
+}
+
+h1 {
+    grid-area: h1;
+    font-size: 3em;
+    font-weight: 800;
+}
+
+section {
+    font-size: 1.9em;
+    grid-area: section;
+}
+
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(https://www.toptal.com/designers/subtlepatterns/uploads/vintage-wallpaper.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    width: 100vw;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    grid-template-areas:
+        'container container container'
+        'footer footer footer'
+    ;
+
+}
+
+
+.container {
+    display: grid;
+    max-width: 95%;
+    margin: 10px auto;
+    grid-area: container;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    grid-template-areas:
+        'header header header  '
+        'containerCard containerCard containerCard  '
+    ;
+
+}
+
+.footer {
+    grid-area: footer;
+    /* border: 2px solid red; */
+    border-radius: 20px;
+    background: #FCFAF9;
+    width: 95%;
+    ;
+    margin: 20px auto;
+    padding-top: 20px;
+    background: linear-gradient(to left, #FFF9FB 0%, #FFEAEC 50%, #E6BEAE 100%);
+
+}
+
+header {
+    display: grid;
+    text-align: center;
+    grid-area: header;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        'h1 h1'
+        'section section'
+    ;
+    grid-row-gap: 23%;
+    margin-bottom: 1%;
+}
+
+#sec1 {
+    color: white;
+    font-weight: 400;
+}
+
+.containerCard {
+    display: grid;
+    grid-area: containerCard;
+    grid-template-columns: repeat(auto-fit, minmax(441px, 1fr));
+    grid-column-gap: 20px;
+    margin-top: 2%;
+
+
+}
+
+.card {
+    box-sizing: border-box;
+    height: max-content;
+}
+
+.card:nth-child(1) {
+    background: linear-gradient(to bottom, #FCFAF9 0%, #88D18A 50%, #40BCD8 100%);
+    border-radius: 20px;
+}
+
+.card:nth-child(2) {
+    background: linear-gradient(to bottom, #FCFAF9 0%, #F0B7B3 50%, #E6BEAE 100%);
+
+    border-radius: 20px;
+
+
+}
+
+.card:nth-child(3) {
+    background: linear-gradient(to bottom, #FCFAF9 0%, #40BCD8 50%, #7EA3CC 100%);
+    border-radius: 20px;
+
+
+}
+
+.card:nth-child(4) {
+    background: linear-gradient(to bottom, #FCFAF9 0%, #40BCD8 50%, #FFF9FB 100%);
+    border-radius: 20px;
+
+
+}
+
+.footer p:not(p:nth-child(1)) {
+    color: #07090F;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 1rem;
+
+}
+
+.footer p:nth-child(1) {
+    color: #222;
+    font-weight: 700;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1.5em;
+}
+
+.bg-kursi {
+    /* background: rgba(255, 255, 255, 0.2) */
+    /* rgba(255, 255, 255, 0.4); */
+    /* -webkit-backdrop-filter: blur(10px);  /* untuk Safari */
+    /* backdrop-filter: blur(10px); */
+    background-color: #FFF9FB;
+    width: 95%;
+    border-radius: 10px;
+    margin: 5% auto;
+    padding: 6%;
+    padding-bottom: 20%;
+    height: 100%;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.6);
+
+}
+
+.card {
+    padding: 5%;
+}
+
+.line {
+    height: 3px;
+    background: #27A53E;
+    margin-bottom: 5%;
+    margin-top: 2%;
+}
+
+.box {
+    padding: 12px;
+    border-radius: 10px;
+    margin: auto 7px;
+}
+
+#modern {
+    color: #07090F;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#one {
+    font-size: 0.5em;
+    margin-bottom: 10px;
+}
+
+/* INI KONTEN DRIVER CARD 2 */
+
+.onee {
+    font-size: 0.5em;
+    display: inline-block;
+}
+
+bold {
+    font-weight: 700;
+    font-size: 0.6em;
+}
+
+/* INI KONTEN DRIVER CARD 2 */
+
+#two {
+    font-weight: 700;
+    font-size: 0.6em;
+}
+
+#three {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--warna10);
+}
+
+.twoo {
+    font-weight: 700;
+    font-size: 0.3em;
+    margin-bottom: 12%;
+    position: absolute;
+    left: 17%;
+    top: 26%;
+}
+
+.route2 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    position: absolute;
+    top: 26%;
+    left: 16%;
+}
+
+
+
+.bg-kursi p {
+    color: #07090F;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+}
+
+.driverr {
+    background: #FFF9FB;
+    width: 47%;
+    display: inline-block;
+
+}
+
+.cashh {
+    display: inline-block;
+    background-color: #FFF9FB;
+    width: 44%;
+
+}
+
+.routee {
+    background-color: #FFF9FB;
+}
+
+
+
+
+
+
+.tombol {
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22%, 1fr));
+    grid-row-gap: 15%;
+    grid-column-gap: 2%;
+    height: 100%;
+
+    margin: 12px auto;
+}
+
+.tombol .kursi {
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+
+}
+
+.tombol .kursi:not(.kursi:nth-child(10), .kursi:nth-child(9), .kursi:nth-child(11)) {
+    padding: 0.9em;
+    display: flex;
+    height: 120%;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(1rem, 1vw, 2rem);
+    word-wrap: break-word;
+
+
+}
+
+.tombol .kursi:not(.kursi:nth-child(1), .kursi:nth-child(9), .kursi:nth-child(10), .kursi:nth-child(11)) {
+    border: 2px solid black;
+
+}
+
+.tombol .kursi:nth-child(1) {
+    background-color: var(--warna10);
+}
+
+/* kita buat kursi ke 9 dan 10 jadi sejajar ke sampingan */
+
+.tombol .kursi:nth-child(9) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: span 2;
+    height: 90%;
+    background-color: var(--warna1);
+    padding: 5%;
+    word-wrap: break-word;
+    font-size: 1rem;
+}
+
+.tombol .kursi:nth-child(10) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    grid-column: span 2;
+    grid-column: span 2;
+    background-color: var(--warna11);
+    padding: 5%;
+    font-size: 1rem;
+
+}
+
+.tombol .kursi:nth-child(11) {
+    grid-column: span 4;
+    background-color: var(--warna11);
+    padding: 2%;
+    font-size: 1rem;
+
+}
+
+
+.tombol2 {
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22%, 1fr));
+    grid-row-gap: 15%;
+    grid-column-gap: 2%;
+    height: 100%;
+
+    margin: 12px auto;
+}
+
+
+:root {
+    --warna1: #3D52D5;
+    --warna2: #9A031E;
+    --warna3: ##FF36AB;
+    --warna4: #A40606;
+    --warna5: #230007;
+    --warna6: #5A0002;
+    --warna7: #F5F1ED;
+    --warna8: #320D6D;
+    --warna9: #FD151B;
+    --warna10: #FD353C;
+    --warna11: #FD5D63;
+    --warna12: #0AC2FF;
+    --warna12: #2FC64A;
+
+
+}
+
+
+/*  card 2 */
+
+
+#route-card2 div {
+    display: inline-block;
+    background-color: var(--warna10);
+    border-radius: 15px;
+    padding: 2.5%;
+    font-size: 1rem;
+    color: white;
+
+    margin-top: 2%;
+}
+
+.shadow-plaint {
+
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.6);
+}
+
+.shadow {
+
+    box-shadow: -8px 0px 0px 0px red, 0px 8px 15px rgba(0, 0, 0, 0.6);
+}
+
+.outline {
+    outline: 5px solid var(--warna10);
+}
+
+
+.white-cash {
+    background-color: #FFF9FB;
+
+}
+
+.dot {
+    outline: 5px dashed var(--warna12);
+
+}
+
+.naruto-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-image: url(../img/Naruto.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    grid-column: span 4;
+    display: inline-block;
+}
+
+.route-avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    background-image: url(../img/Route.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    grid-column: span 4;
+    display: inline-block;
+}
+
+.pass-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-image: url(../img/Passenger.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    grid-column: span 4;
+    display: inline-block;
+}
+
+.cash-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-image: url(../img/Cash.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    grid-column: span 4;
+    display: inline-block;
+}
+
+.merah {
+    background-color: var(--warna10);
+}
+
+.green {
+    background-color: #32DE8A;
+}
+
+
+.margin {
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+
+.kursi- {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 10%;
+
+
+    margin-right: 10%;
+}
+
+.background {
+    background-color: #FFF9FB;
+}
+
+#icon1 {
+    position: relative;
+
+}
+
+
+/* control animation */
+
+.card {
+    transform: scale(0) skew(15deg, 15deg) skew(-0.06turn, 18deg);
+    overflow: hidden;
+
+    transition:
+        transform 2s ease,
+        /* transform 0.6s ease, 
+    box-sadow 0.3s ease, */
+        opacity 0.5s ease;
+}
+
+.card-expand-width {
+    transform: scale(1) skewX(0deg);
+}
+
+
+.hover:hover {
+    transform: translateY(-20px);
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.6);
+}
+
+#cash {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30%;
+}
+
+#tarif {
+    display: inline-block;
+    font-size: 0.5em;
+}
+
+
+
+/* control flow */
+
+@media screen and (max-width: 768px) {
+   
+
+    
+
+    header h1{
+        font-size: 2em;
+    }
+    
+    #sec1 {
+        font-size: 1.4em;
+        font-style: italic;
+    }
+
+    .route2 {
+        left: 10%;
+    }
+
+    .twoo {
+        left: 10%;
+    }
+
+
+    .card {
+        position: relative;
+        border: 2px solid transparent;
+    }
+
+    #modern {
+        position: absolute;
+        left: 6%;
+        top: 2%;
+
+        font-size: 1.5em;
+    }
+
+    
+
+    .tombol .kursi {
+        font-weight: 500;
+    }
+
+    .dd {
+        gap: 28%
+    }
+
+    .box {
+        border-radius: 10px;
+        margin: 2%;
+
+    }
+
+    .margin-bottom {
+        margin-bottom: 5%;
+    }
+
+    .card {
+        margin-bottom: 5%;
+    }
+
+    .card:nth-child(1) {
+        margin-top: 4%;
+
+        padding-bottom: 8%;
+
+    }
+
+    .card:nth-child(2) {
+        padding-bottom: 10%;
+    }
+
+    .card:nth-child(3) {
+        height: max-content;
+    }
+
+    .card:nth-child(4) {
+        padding-bottom: 10%;
+    }
+
+    .bg-kursi {
+        padding-bottom: 15%;
+
+    }
+
+    .footer p:nth-child(1) {
+        font-size: 1.5em;
+    }
+    .footer p:not(p:nth-child(1)) {
+        font-size: 1.2em;
+    }
+}

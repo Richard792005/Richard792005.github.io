@@ -1,0 +1,47 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="100" height="100" fill="#FD353C"/>
+  
+  <!-- Face -->
+  <ellipse cx="50" cy="45" rx="25" ry="28" fill="#FDBCB4"/>
+  
+  <!-- Hair -->
+  <path d="M25 35 Q28 12 35 18 Q40 8 45 15 Q48 5 50 12 Q52 5 55 15 Q60 8 65 18 Q72 12 75 35 Q75 30 70 32 Q65 22 60 28 Q55 18 50 22 Q45 18 40 28 Q35 22 30 32 Q25 30 25 35" fill="#C0C0C0"/>
+  
+  <!-- Hair spike (distinctive Kakashi style) -->
+  <path d="M48 12 Q50 2 52 12" fill="#C0C0C0"/>
+  
+  <!-- Headband -->
+  <rect x="28" y="28" width="44" height="8" fill="#000080"/>
+  <rect x="42" y="25" width="16" height="14" fill="#C0C0C0"/>
+  <circle cx="50" cy="32" r="3" fill="#FF4500"/>
+  
+  <!-- Face mask -->
+  <path d="M32 50 Q50 55 68 50 L68 65 Q50 70 32 65 Z" fill="#000080"/>
+  
+  <!-- Left eye (visible) -->
+  <ellipse cx="42" cy="42" rx="4" ry="3" fill="white"/>
+  <circle cx="42" cy="42" r="2" fill="#2C2C54"/>
+  <circle cx="42" cy="41" r="1" fill="black"/>
+  
+  <!-- Right eye (covered by headband) -->
+  <rect x="54" y="39" width="8" height="6" fill="#000080"/>
+  <line x1="56" y1="41" x2="60" y2="43" stroke="#C0C0C0" stroke-width="1"/>
+  
+  <!-- Body/Vest -->
+  <rect x="35" y="65" width="30" height="35" fill="#228B22"/>
+  <rect x="40" y="70" width="20" height="25" fill="#000080"/>
+  
+  <!-- Vest details -->
+  <rect x="42" y="72" width="16" height="3" fill="#228B22"/>
+  <rect x="42" y="77" width="16" height="3" fill="#228B22"/>
+  <rect x="42" y="82" width="16" height="3" fill="#228B22"/>
+  
+  <!-- Arms -->
+  <rect x="25" y="68" width="12" height="20" fill="#228B22"/>
+  <rect x="63" y="68" width="12" height="20" fill="#228B22"/>
+  
+  <!-- Hands -->
+  <circle cx="31" cy="88" r="4" fill="#FDBCB4"/>
+  <circle cx="69" cy="88" r="4" fill="#FDBCB4"/>
+</svg>
