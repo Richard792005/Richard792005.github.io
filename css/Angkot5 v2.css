@@ -707,6 +707,11 @@ img, video, .card, .driverr, .cashh {
     .route2 {
         left: 25%;
     }
+
+    .bg-kursi {
+        padding-bottom: 25%;
+
+    }
     /* konten box driver cash tarif */
     
     .box {
@@ -811,10 +816,7 @@ img, video, .card, .driverr, .cashh {
         padding-bottom: 10%;
     }
 
-    .bg-kursi {
-        padding-bottom: 15%;
-
-    }
+  
 
     .footer p:nth-child(1) {
         font-size: 1.5em;
