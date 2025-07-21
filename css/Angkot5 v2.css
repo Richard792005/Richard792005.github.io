@@ -684,7 +684,7 @@ img, video, .card, .driverr, .cashh {
 @media screen and (min-width: 300px) and (max-width: 505px) {
     header h1 {
         font-size: 1.4em;
-        color: red;
+        /* color: red; */
     }
 
     #sec1 {
