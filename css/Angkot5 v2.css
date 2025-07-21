@@ -666,6 +666,20 @@ bold {
 
 
 /* control flow */
+html, body {
+  overflow-x: hidden;
+}
+
+img, video, .card, .driverr, .cashh {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 399px) {
+  .containerCard {
+    grid-template-columns: 1fr;
+  }
+}
 
 @media screen and (min-width: 400px) and (max-width: 505px) {
     header h1 {
