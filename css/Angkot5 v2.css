@@ -171,7 +171,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     display: grid;
-    width: 100vw;
+    width: 100%;
     grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
     grid-template-areas:
         'container container container'
@@ -228,16 +228,16 @@ header {
 .containerCard {
     display: grid;
     grid-area: containerCard;
-    grid-template-columns: repeat(auto-fit, minmax(441px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-column-gap: 20px;
     margin-top: 2%;
-
 
 }
 
 .card {
     box-sizing: border-box;
     height: max-content;
+    margin-bottom: 2%;
 }
 
 .card:nth-child(1) {
@@ -322,6 +322,7 @@ header {
     font-weight: 600;
 }
 
+
 #one {
     font-size: 0.5em;
     margin-bottom: 10px;
@@ -351,6 +352,7 @@ bold {
     font-weight: 700;
     color: var(--warna10);
 }
+
 
 .twoo {
     font-weight: 700;
@@ -543,7 +545,8 @@ bold {
 }
 
 .dot {
-    outline: 5px dashed var(--warna12);
+    outline: 5px  var(--warna12);
+    outline-style:double;
 
 }
 
@@ -611,9 +614,8 @@ bold {
     font-weight: bold;
     text-align: center;
     padding: 10%;
-
-
     margin-right: 10%;
+    margin-bottom: 5%;
 }
 
 .background {
@@ -665,28 +667,79 @@ bold {
 
 /* control flow */
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 400px) and (max-width: 505px) {
+    header h1 {
+        font-size: 1.4em;
+    }
+
+    #sec1 {
+        font-size: 1em;
+        margin-bottom: 10%;
+    }
+
+    .card:not(.card:nth-child(4)) {
+        margin-bottom: 8%;
+    }
+
+    #modern {
+        font-size: 1em;
+    }
+
+    /* konten box driver cash tarif */
+    
+    .box {
+        margin: auto 3.6%;
+    }
+
+    .driverr {
+        width: 40%;
+        margin-bottom: 5%;
+    }
+    /* konten selesai */
+
+    /* container card */
+    
+    .containerCard {
+        grid-template-columns: 1fr; /* Biar satu kolom aja */
+      }
+    /* container card selesai*/
+
+    /*  */
+    .margin-bottom {
+        margin-bottom: 7%;
+    }
+
+    /*  */
+
+    .footer p:nth-child(1) {
+        font-size: 1.2em;
+    }
+
+    .footer p:not(p:nth-child(1)) {
+        font-size: 100%;
+    }
+    
+}
+
+@media screen and (min-width: 506px) and (max-width: 768px) {
+
+
+    header h1 {
+        font-size: 1.9em;
+    }
+
+    #sec1 {
+        font-size: 1.5em;
+        font-style: italic;
+    }
+
    
 
     
 
-    header h1{
-        font-size: 2em;
+    .containerCard {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
     }
-    
-    #sec1 {
-        font-size: 1.4em;
-        font-style: italic;
-    }
-
-    .route2 {
-        left: 10%;
-    }
-
-    .twoo {
-        left: 10%;
-    }
-
 
     .card {
         position: relative;
@@ -698,10 +751,8 @@ bold {
         left: 6%;
         top: 2%;
 
-        font-size: 1.5em;
+        font-size: 120%;
     }
-
-    
 
     .tombol .kursi {
         font-weight: 500;
@@ -709,12 +760,6 @@ bold {
 
     .dd {
         gap: 28%
-    }
-
-    .box {
-        border-radius: 10px;
-        margin: 2%;
-
     }
 
     .margin-bottom {
@@ -752,7 +797,8 @@ bold {
     .footer p:nth-child(1) {
         font-size: 1.5em;
     }
+
     .footer p:not(p:nth-child(1)) {
-        font-size: 1.2em;
+        font-size: 100%;
     }
 }
