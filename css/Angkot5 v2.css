@@ -167,9 +167,10 @@ section {
 }
 
 body {
-    background: url(https://www.toptal.com/designers/subtlepatterns/uploads/vintage-wallpaper.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    /* background: url(https://www.toptal.com/designers/subtlepatterns/uploads/vintage-wallpaper.png); */
+    background: linear-gradient(135deg, #0c0c0c 0%, #16213e 25%, #16213e 50%, #0f3460 60%, #533a71 100%);
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
     display: grid;
     width: 100%;
     grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
@@ -474,6 +475,7 @@ bold {
     grid-column: span 4;
     background-color: var(--warna11);
     padding: 2%;
+    height: max-content;
     font-size: 1rem;
 
 }
@@ -825,4 +827,82 @@ img, video, .card, .driverr, .cashh {
     .footer p:not(p:nth-child(1)) {
         font-size: 100%;
     }
+}
+
+
+
+/* Floating shape */
+
+    .floating-shape {
+        position: absolute;
+        border-radius: 50%;
+        background: linear-gradient(45deg, rgba(28, 11, 94, 0.624), rgba(10, 6, 219, 0.444));
+        animation: floatshape 8s infinite ease-in-out;
+        z-index: 0;
+    }
+
+    .shape-1 {
+        width: 100px;
+        height: 100px;
+        top: 2%;
+        left: 10%;
+        animation-delay: 0s;
+    }
+    .shape-2 {
+        width: 80px;
+        height: 80px;
+        top: 0%;
+        left: 5%;
+        animation-delay: 2s;
+    }
+    .shape-3 {
+        width: 100px;
+        height: 100px;
+        top: 2%;
+        left: 80%;
+        animation-delay: 0s;
+    }
+
+    .shape-4 {
+        width: 80px;
+        height: 80px;
+        top: 0%;
+        left: 86%;
+        animation-delay: 2s;
+    }
+
+    @keyframes floatshape {
+        0%,
+        100% {
+            transform: translateY(0px), rotate(0deg);
+        }
+        50% {
+            transform: translateY(-50px), rotate(180deg);
+        }
+    }
+
+/* Selesai */
+
+
+/* animation before */
+
+.ddriver {
+    position: relative;
+    overflow: hidden;
+}
+
+.ddriver::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2),transparent);
+    transition: left 0.5s;
+
+}
+
+.ddriver:hover::before {
+    left: 100%;
 }
