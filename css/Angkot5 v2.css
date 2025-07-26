@@ -547,8 +547,8 @@ bold {
 }
 
 .dot {
-    outline: 5px  var(--warna12);
-    outline-style:double;
+    outline: 5px var(--warna12);
+    outline-style: double;
 
 }
 
@@ -668,19 +668,104 @@ bold {
 
 
 /* control flow */
-html, body {
-  overflow-x: hidden;
+html,
+body {
+    overflow-x: hidden;
 }
 
-img, video, .card, .driverr, .cashh {
-  max-width: 100%;
-  box-sizing: border-box;
+img,
+video,
+.card,
+.driverr,
+.cashh {
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 @media (max-width: 399px) {
-  .containerCard {
-    grid-template-columns: 1fr;
-  }
+    .containerCard {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Floating shape */
+
+.floating-shape {
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(45deg, rgba(28, 11, 94, 0.624), rgba(10, 6, 219, 0.444));
+    animation: floatshape 8s infinite ease-in-out;
+    z-index: 0;
+}
+
+.shape-1 {
+    width: 100px;
+    height: 100px;
+    top: 2%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.shape-2 {
+    width: 80px;
+    height: 80px;
+    top: 0%;
+    left: 5%;
+    animation-delay: 2s;
+}
+
+.shape-3 {
+    width: 100px;
+    height: 100px;
+    top: 2%;
+    left: 80%;
+    animation-delay: 0s;
+}
+
+.shape-4 {
+    width: 80px;
+    height: 80px;
+    top: 0%;
+    left: 86%;
+    animation-delay: 2s;
+}
+
+@keyframes floatshape {
+
+    0%,
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-50px) rotate(180deg);
+    }
+}
+
+/* Selesai */
+
+
+/* animation before */
+
+.ddriver {
+    position: relative;
+    overflow: hidden;
+}
+
+.ddriver::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+
+}
+
+.ddriver:hover::before {
+    left: 100%;
 }
 
 @media screen and (min-width: 300px) and (max-width: 505px) {
@@ -714,8 +799,9 @@ img, video, .card, .driverr, .cashh {
         padding-bottom: 25%;
 
     }
+
     /* konten box driver cash tarif */
-    
+
     .box {
         margin: auto 3.6%;
     }
@@ -724,13 +810,16 @@ img, video, .card, .driverr, .cashh {
         width: 40%;
         margin-bottom: 5%;
     }
+
     /* konten selesai */
 
     /* container card */
-    
+
     .containerCard {
-        grid-template-columns: 1fr; /* Biar satu kolom aja */
-      }
+        grid-template-columns: 1fr;
+        /* Biar satu kolom aja */
+    }
+
     /* container card selesai*/
 
     /*  */
@@ -747,7 +836,47 @@ img, video, .card, .driverr, .cashh {
     .footer p:not(p:nth-child(1)) {
         font-size: 100%;
     }
+
+    /* floating shape */
+
+    .shape-1 {
+        width: 40px;
+        height: 40px;
+        top: 5%;
+        left: 15%;
+    }
     
+    .shape-2 {
+        width: 30px;
+        height: 30px;
+        top: 4%;
+    }
+    
+    .shape-3 {
+        width: 40px;
+        height: 40px;
+        top: 5%;
+        left: 77%;
+        
+    }
+    
+    .shape-4 {
+        width: 30px;
+        height: 30px;
+        top: 4%;
+    }
+
+    /* end */
+
+    @keyframes floatShape {
+        0%,100% {
+            transform: rotate(0deg) translateY(0px);
+        }
+        50% {
+            transform: rotate(180deg) translateY(-5px);
+        }
+    }
+
 }
 
 @media screen and (min-width: 506px) and (max-width: 768px) {
@@ -761,10 +890,6 @@ img, video, .card, .driverr, .cashh {
         font-size: 1.5em;
         font-style: italic;
     }
-
-   
-
-    
 
     .containerCard {
         grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
@@ -818,7 +943,7 @@ img, video, .card, .driverr, .cashh {
         padding-bottom: 10%;
     }
 
-  
+
 
     .footer p:nth-child(1) {
         font-size: 1.5em;
@@ -827,82 +952,4 @@ img, video, .card, .driverr, .cashh {
     .footer p:not(p:nth-child(1)) {
         font-size: 100%;
     }
-}
-
-
-
-/* Floating shape */
-
-    .floating-shape {
-        position: absolute;
-        border-radius: 50%;
-        background: linear-gradient(45deg, rgba(28, 11, 94, 0.624), rgba(10, 6, 219, 0.444));
-        animation: floatshape 8s infinite ease-in-out;
-        z-index: 0;
-    }
-
-    .shape-1 {
-        width: 100px;
-        height: 100px;
-        top: 2%;
-        left: 10%;
-        animation-delay: 0s;
-    }
-    .shape-2 {
-        width: 80px;
-        height: 80px;
-        top: 0%;
-        left: 5%;
-        animation-delay: 2s;
-    }
-    .shape-3 {
-        width: 100px;
-        height: 100px;
-        top: 2%;
-        left: 80%;
-        animation-delay: 0s;
-    }
-
-    .shape-4 {
-        width: 80px;
-        height: 80px;
-        top: 0%;
-        left: 86%;
-        animation-delay: 2s;
-    }
-
-    @keyframes floatshape {
-        0%,
-        100% {
-            transform: translateY(0px), rotate(0deg);
-        }
-        50% {
-            transform: translateY(-50px), rotate(180deg);
-        }
-    }
-
-/* Selesai */
-
-
-/* animation before */
-
-.ddriver {
-    position: relative;
-    overflow: hidden;
-}
-
-.ddriver::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2),transparent);
-    transition: left 0.5s;
-
-}
-
-.ddriver:hover::before {
-    left: 100%;
 }
